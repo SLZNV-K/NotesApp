@@ -13,7 +13,6 @@ import com.github.slznvk.notesapp.domain.dto.Priority
 
 interface OnInteractionListener {
     fun onNoteClick(note: Note)
-    fun onPriorityClick(note: Note)
 }
 
 class NoteAdapter(
