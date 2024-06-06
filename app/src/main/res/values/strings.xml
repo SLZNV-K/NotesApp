@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NotesApp</string>
+    <string name="notes">Notes</string>
+    <string name="description_the_button_for_adding_a_note">The button for adding a note</string>
+    <string name="note">Note</string>
+    <string name="error_of_loading">Error of loading</string>
+    <string name="retry">Retry</string>
+    <string name="your_note_will_be_here">Your note will be here</string>
+    <string name="new_note">New note</string>
+    <string name="title_of_note">Title of note</string>
+    <string name="no_notes_found">No notes found</string>
+</resources>

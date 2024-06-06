@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.ui.NoteFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/back_arrow_icon_24">
+
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="no"
+            android:background="@null"
+            android:hint="@string/title_of_note"
+            android:inputType="text"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/removeNoteButton"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            app:icon="@drawable/trash_icon_18"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/lowButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/green" />
+
+        <RadioButton
+            android:id="@+id/mediumButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/yellow" />
+
+        <RadioButton
+            android:id="@+id/highButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/red" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:autofillHints="no"
+        android:background="@null"
+        android:hint="@string/your_note_will_be_here"
+        android:inputType="textMultiLine"
+        android:padding="8dp"
+        tools:ignore="LabelFor"
+        tools:text="@tools:sample/lorem[60]" />
+
+</LinearLayout>
